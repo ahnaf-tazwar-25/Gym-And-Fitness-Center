@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="466.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserGuis.Trainer.ApplyForLeavingController">
+   <children>
+      <Button layoutX="37.0" layoutY="405.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="28.0" prefWidth="74.0" text="Back" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="244.0" layoutY="436.0" prefHeight="34.0" prefWidth="166.0" text="Developed by AMPM" />
+      <Label layoutX="219.0" layoutY="17.0" text="Apply For Leave" textFill="#4750c9">
+         <font>
+            <Font name="Bodoni MT Black Italic" size="24.0" />
+         </font>
+      </Label>
+      <Button contentDisplay="CENTER" layoutX="452.0" layoutY="280.0" mnemonicParsing="false" onAction="#sendButtonOnClick" prefHeight="28.0" prefWidth="74.0" text="Submit" />
+      <TextArea fx:id="application" layoutX="128.0" layoutY="134.0" prefHeight="135.0" prefWidth="398.0" />
+      <Label layoutX="128.0" layoutY="112.0" text="Please Write your Application " />
+      <Label fx:id="Label" alignment="CENTER" contentDisplay="CENTER" layoutX="201.0" layoutY="351.0" prefHeight="28.0" prefWidth="251.0" />
+   </children>
+</AnchorPane>

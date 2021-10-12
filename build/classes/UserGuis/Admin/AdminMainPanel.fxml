@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" onDragDetected="#changePasswordButtonOnClick" prefHeight="658.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserGuis.Admin.AdminMainPanelController">
+   <children>
+      <Button layoutX="308.0" layoutY="581.0" mnemonicParsing="false" onAction="#logOutOnClick" prefHeight="28.0" prefWidth="100.0" text="Sign Out" />
+      <Button layoutX="264.0" layoutY="128.0" mnemonicParsing="false" onAction="#createNewAccountOnClick" prefHeight="50.0" prefWidth="190.0" text="Create New Account" />
+      <Button layoutX="129.0" layoutY="204.0" mnemonicParsing="false" onAction="#generateGraphOnClick" prefHeight="50.0" prefWidth="190.0" text="Generate Graph" />
+      <Button layoutX="398.0" layoutY="339.0" mnemonicParsing="false" onAction="#deleteAccountOnClick" prefHeight="50.0" prefWidth="190.0" text="Delete Account" />
+      <Button layoutX="399.0" layoutY="204.0" mnemonicParsing="false" onAction="#updateLatestFeaturesButtonOnClick" prefHeight="50.0" prefWidth="190.0" text="Update Latest Features" />
+      <Button layoutX="398.0" layoutY="270.0" mnemonicParsing="false" onAction="#addNewProgramButtonOnClick" prefHeight="50.0" prefWidth="190.0" text="Add New Program" />
+      <Button layoutX="129.0" layoutY="270.0" mnemonicParsing="false" onAction="#suspendAccountButtonOnClick" prefHeight="50.0" prefWidth="190.0" text="Suspend Account" />
+      <Label layoutX="173.0" layoutY="34.0" text="Administrator Control Panel" textFill="#4750c9" AnchorPane.rightAnchor="171.0">
+         <font>
+            <Font name="Bodoni MT Black Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="275.0" layoutY="609.0" prefHeight="34.0" prefWidth="166.0" text="Developed by AMPM" AnchorPane.bottomAnchor="14.600000000000001" />
+      <Button layoutX="129.0" layoutY="339.0" mnemonicParsing="false" onAction="#resetPasswordButtonOnClick" prefHeight="50.0" prefWidth="190.0" text="View Password Reset Request" />
+      <Button layoutX="129.0" layoutY="404.0" mnemonicParsing="false" onAction="#appendAccountButtonOnClick" prefHeight="50.0" prefWidth="190.0" text="Append Account" />
+      <Button layoutX="398.0" layoutY="404.0" mnemonicParsing="false" onAction="#viewListOfAccountButtonOnClick" prefHeight="50.0" prefWidth="190.0" text="View List of Account" />
+   </children>
+</AnchorPane>

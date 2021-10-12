@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserGuis.Member.Renewal1Controller">
+   <children>
+      <Label layoutX="176.0" layoutY="14.0" text="Membership Renewal" textFill="#4711b2">
+         <font>
+            <Font name="Bodoni MT Black Italic" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="52.0" prefHeight="86.0" prefWidth="498.0" text="Membership status of the following memebr will show in this label">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="24.0" layoutY="352.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="25.0" prefWidth="61.0" text="Back" />
+      <Button layoutX="238.0" layoutY="188.0" mnemonicParsing="false" onAction="#renewButtonOnClick" text="Renew Membership" />
+      <Label alignment="CENTER" layoutX="228.0" layoutY="377.0" prefHeight="19.0" prefWidth="141.0" text="Developed by AMPM" />
+   </children>
+</AnchorPane>

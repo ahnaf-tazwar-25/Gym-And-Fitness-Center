@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="612.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserGuis.Member.MemberMainPanelController">
+   <children>
+      <Button layoutX="621.0" layoutY="572.0" mnemonicParsing="false" onAction="#logoutButtonOnClick" prefHeight="26.0" prefWidth="93.0" text="Sign Out" />
+      <Button layoutX="117.0" layoutY="131.0" mnemonicParsing="false" onAction="#programeScheduleButtonOnClick" prefHeight="44.0" prefWidth="166.0" text="Program Schedule" />
+      <Button layoutX="117.0" layoutY="222.0" mnemonicParsing="false" onAction="#appoinmentButtonOnClick" prefHeight="44.0" prefWidth="166.0" text="Appoinment" />
+      <Button layoutX="387.0" layoutY="131.0" mnemonicParsing="false" onAction="#evaluationButtonOnClick" prefHeight="44.0" prefWidth="166.0" text="Evaluation" />
+      <Button layoutX="387.0" layoutY="222.0" mnemonicParsing="false" onAction="#renewMembershipButtonOnClick" prefHeight="44.0" prefWidth="166.0" text="Renew MemberShip" />
+      <Label layoutX="268.0" layoutY="14.0" text="Member Panel" textFill="#4750c9">
+         <font>
+            <Font name="Bodoni MT Black Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="590.0" prefHeight="17.0" prefWidth="141.0" text="Developed by AMPM" />
+      <Label fx:id="notification" alignment="CENTER" contentDisplay="CENTER" layoutX="109.0" layoutY="424.0" prefHeight="101.0" prefWidth="478.0" />
+      <Label layoutX="268.0" layoutY="407.0" text="Check your notification here">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="265.0" layoutY="305.0" mnemonicParsing="false" onAction="#changePasswordButtonOnClick" prefHeight="44.0" prefWidth="166.0" text="Change Password" />
+      <Label fx:id="label" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="242.0" layoutY="48.0" prefHeight="69.0" prefWidth="244.0" />
+      <Button layoutX="612.0" layoutY="305.0" mnemonicParsing="false" onAction="#updateHeightButtonOnClick" text="Update Height" />
+      <Button layoutX="610.0" layoutY="189.0" mnemonicParsing="false" onAction="#updateWeightButtonOnClick" text="Update Weight" />
+      <ComboBox fx:id="weightCombo" layoutX="600.0" layoutY="141.0" prefHeight="25.0" prefWidth="107.0" promptText="Weight(Kg)" />
+      <ComboBox fx:id="heightCombo" layoutX="598.0" layoutY="260.0" prefHeight="25.0" prefWidth="107.0" promptText="Height(cm)" />
+   </children>
+</AnchorPane>

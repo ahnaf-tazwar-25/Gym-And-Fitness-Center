@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserGuis.Manager.ListOfAllMenebersController">
+   <center>
+      <AnchorPane prefHeight="433.0" prefWidth="674.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="14.0" layoutY="329.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="30.0" prefWidth="76.0" text="Back" />
+            <TableView fx:id="table" layoutX="26.0" layoutY="14.0" prefHeight="313.0" prefWidth="550.0" AnchorPane.bottomAnchor="46.799999999999955" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="26.799999999999955">
+               <columns>
+                  <TableColumn fx:id="id" minWidth="108.0" prefWidth="108.0" text="ID" />
+                  <TableColumn fx:id="name" minWidth="108.0" prefWidth="108.0" text="Name" />
+                  <TableColumn fx:id="contactNo" minWidth="108.0" prefWidth="108.0" text="Contact No." />
+                  <TableColumn fx:id="email" minWidth="108.0" prefWidth="108.0" text="E- mail" />
+                  <TableColumn fx:id="dob" minWidth="108.0" prefWidth="108.0" text="Date of Birth" />
+               </columns>
+            </TableView>
+            <Label alignment="CENTER" layoutX="229.0" layoutY="344.0" prefHeight="19.0" prefWidth="141.0" text="Developed by AMPM" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+            <Menu mnemonicParsing="false" text="List of Account">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#managerButtonOnClick" text="Manager" />
+                  <MenuItem mnemonicParsing="false" onAction="#trainerButtonOnClick" text="Trainer" />
+                  <MenuItem mnemonicParsing="false" onAction="#memberButtonOnClick" text="Member" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
